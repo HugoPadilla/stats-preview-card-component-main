@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  color: white;
+  font-family: "Inter", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #aa5cdb;
+}
+
+.main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card-container {
+  background-color: #1b1938;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.card-container .imagen-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.card-container .imagen-container .imagen {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.card-container .imagen-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+  background-color: #aa5cdb;
+}
+
+.card-container .copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.card-container .copy .title {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.card-container .copy .title span {
+  color: #aa5cdb;
+}
+
+.card-container .copy .paragraph {
+  margin-top: 0;
+  margin-bottom: 2em;
+  margin-left: .2rem;
+  margin-right: .2rem;
+  text-align: center;
+  line-height: 1.5em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card-container .copy .stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-container .copy .stat p {
+  margin: 0;
+  padding: 2px;
+}
+
+.card-container .copy .stat .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.card-container .copy .stat .item .value {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.card-container .copy .stat .item .heading {
+  font-family: 'Lexend Deca', sans-serif;
+  font-variant: small-caps;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.attribution {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .card-container .copy .stat {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .card-container .imagen {
+    width: 100%;
+    height: auto;
+  }
+  .card-container .copy {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    margin-right: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-container .copy .title {
+    text-align: left;
+  }
+  .card-container .copy .paragraph {
+    text-align: left;
+    font-size: 15px;
+  }
+  .card-container .copy .stat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 2rem;
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card-container .copy .stat .item {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  .card-container {
+    width: auto;
+    border-radius: 10px;
+  }
+  .card-container .imagen-container {
+    width: auto;
+    height: 100%;
+  }
+  .card-container .copy {
+    height: 100%;
+    width: 32rem;
+    padding: 2rem;
+  }
+  .card-container .copy .title {
+    padding-right: 3rem;
+    margin-top: 0;
+  }
+  .card-container .copy .paragraph {
+    padding-right: 1rem;
+  }
+  .card-container .copy .stat {
+    padding-top: 1rem;
+  }
+  .attribution {
+    display: inherit;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card-container .copy {
+    height: 100%;
+    width: 32rem;
+    padding: 2rem;
+    margin-left: 2rem;
+  }
+  .card-container .copy .title {
+    font-size: 2em;
+    padding-right: 5rem;
+    margin-top: 0;
+  }
+  .card-container .copy .paragraph {
+    padding-right: 4rem;
+  }
+  .card-container .copy .stat {
+    padding-top: 2rem;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .card-container .copy .stat .item {
+    padding-right: 3.5rem;
+  }
+  .card-container .copy .stat .item .value {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
