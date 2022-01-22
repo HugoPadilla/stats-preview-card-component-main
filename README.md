@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/HugoPadilla/stats-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://hugopadilla.github.io/stats-preview-card-component-main/)
+- Solution URL: [GitHub project](https://github.com/HugoPadilla/stats-preview-card-component-main)
+- Live Site URL: [Link site](https://hugopadilla.github.io/stats-preview-card-component-main/)
 
 ## My process
 
